@@ -30,7 +30,7 @@
 </head>
   <body>
 <button type="button1" class="btn btn-primary1" id="message" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    <i class="far fa-envelope"></i>
+    <i class="fas fa-envelope"></i>
   </button>
 
 
