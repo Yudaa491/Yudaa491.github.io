@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -18,6 +18,13 @@
         padding: 0;
       }
 
+      body{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #07112e;
+      }
+
       #message{
         height: 100vh;
         width: 100%;
@@ -25,13 +32,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        color: white;
       }
+
     </style>
 </head>
   <body>
-<button type="button1" class="btn btn-primary1" id="message" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    <i class="fas fa-envelope"></i>
-  </button>
+  <i id="message" class="fas fa-envelope" onclick="changeIcon(this)" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+
 
 
   
@@ -40,8 +48,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Pesan (1)</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h3 class="modal-title" id="staticBackdropLabel">Pesan (1)</h3>
         </div>
         <div class="modal-body">
           Walah walah, kita ketemu lagi niccchh, sekarang Linda tolong tekan ikon whatsapp ini dongg
@@ -54,6 +61,10 @@
   </div>
   <script>
         alert("Halo Linda, thankyou ya udh mau buka link yang saia kirim, coba kamu tekan ikon amplopnya")
+        let changeIcon = function(icon) {
+          icon.classlist.toggle('fa-envelope-open')
+        }
+        changeIcon = (icon) => icon.classList.toggle('fa-envelope-open')
   </script>
     
   </body>
