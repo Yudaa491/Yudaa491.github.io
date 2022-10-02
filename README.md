@@ -1,9 +1,9 @@
-<!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Buat Linda</title>
     <link
     rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
